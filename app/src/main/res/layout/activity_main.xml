@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.eyyup1516.parkpos1.MainActivity">
+
+    <TextView
+        android:text="Plaka"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView"
+        android:layout_alignBaseline="@+id/plaka"
+        android:layout_alignBottom="@+id/plaka"
+        android:layout_alignParentStart="true"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:text="Giriş"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/plaka"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="15dp"
+        android:id="@+id/textView2"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:text="Çıkış"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView2"
+        android:layout_marginTop="29dp"
+        android:id="@+id/textView3"
+        tools:ignore="HardcodedText" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="time"
+        android:ems="10"
+        android:id="@+id/giris"
+        android:layout_alignBaseline="@+id/textView2"
+        android:layout_alignBottom="@+id/textView2"
+        android:layout_alignStart="@+id/plaka"
+        tools:ignore="LabelFor" />
+
+    <TextView
+        android:text="Ücret"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView4"
+        android:layout_alignBottom="@+id/ucret"
+        android:layout_alignParentStart="true"
+        tools:ignore="HardcodedText" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/ucret"
+        android:layout_below="@+id/cikis"
+        android:layout_alignStart="@+id/cikis"
+        tools:ignore="LabelFor" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="time"
+        android:ems="10"
+        android:id="@+id/cikis"
+        tools:ignore="LabelFor"
+        android:layout_below="@+id/giris"
+        android:layout_alignStart="@+id/giris" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:layout_marginEnd="16dp"
+        android:id="@+id/plaka"
+        tools:ignore="LabelFor,RelativeOverlap"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:text="ID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView4"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="39dp"
+        android:id="@+id/textView6"
+        tools:ignore="HardcodedText" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:layout_below="@+id/ucret"
+        android:layout_alignEnd="@+id/ucret"
+        android:layout_marginTop="21dp"
+        android:id="@+id/id"
+        tools:ignore="LabelFor" />
+
+    <Button
+        android:text="Kaydet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/kaydet"
+        android:layout_marginTop="18dp"
+        tools:ignore="HardcodedText"
+        android:layout_below="@+id/id"
+        android:layout_toEndOf="@+id/textView" />
+
+    <Button
+        android:text="Göster"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/kaydet"
+        android:layout_alignEnd="@+id/id"
+        android:layout_marginEnd="53dp"
+        android:id="@+id/goster"
+        tools:ignore="HardcodedText" />
+
+</RelativeLayout>
